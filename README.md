@@ -16,7 +16,7 @@ Make the script executable:
 ```bash
     chmod +x MacChangerPy.py
 
-## Usage
+# Usage
 
 Change to a specific MAC address:
 ```bash
