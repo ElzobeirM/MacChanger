@@ -13,5 +13,5 @@ A Python script for changing the MAC address of a network interface. This tool a
         Make sure you have Python 3.x installed.
         
 3.Make the script executable:
- ```bash
-  chmod +x MacChangerPy.py
+```bash
+    chmod +x MacChangerPy.py
