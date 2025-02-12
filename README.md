@@ -1,3 +1,4 @@
+
 # MacChangerPy
 
 A Python script for changing the MAC address of a network interface. This tool allows users to change the MAC address to a specified value or a randomly generated one, and it supports timing the changes.
@@ -7,34 +8,37 @@ A Python script for changing the MAC address of a network interface. This tool a
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/MacChangerPy.git
-   
- Install the required dependencies:
+   ```
 
-    Python 3.x installed.
-        
-Make the script executable:
-```bash
-    chmod +x MacChangerPy.py
+2. Install the required dependencies:
+   - Python 3.x installed.
 
-# Usage
+3. Make the script executable:
+   ```bash
+   chmod +x MacChangerPy.py
+   ```
 
-Change to a specific MAC address:
+## Usage
+
+### Change to a specific MAC address:
 ```bash
 python MacChangerPy.py -i eth0 -m XX:XX:XX:XX:XX:XX
+```
 
-Show the current MAC address:
+### Show the current MAC address:
 ```bash
 python MacChangerPy.py -i eth0 -c
+```
 
-Change the MAC address to a random value every specified time interval:
+### Change the MAC address to a random value every specified time interval:
 ```bash
 python MacChangerPy.py -i eth0 -r -t 10
+```
 
-## Options:
--i : Network interface (required)
--m : New MAC address
--r : Generate a random MAC address
--t : Time interval (in seconds) for changing the MAC address (used with -r)
--c : Show the current MAC address
--V : Show the script version
-
+## Available Options:
+- `-i` : Network interface (required)
+- `-m` : New MAC address
+- `-r` : Generate a random MAC address
+- `-t` : Time interval (in seconds) for changing the MAC address (used with `-r`)
+- `-c` : Show the current MAC address
+- `-V` : Show the script version
