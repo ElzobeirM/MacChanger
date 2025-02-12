@@ -10,8 +10,27 @@ A Python script for changing the MAC address of a network interface. This tool a
    
  2.Install the required dependencies:
 
-     Make sure you have Python 3.x installed.
+    Python 3.x installed.
         
 3.Make the script executable:
 ```bash
     chmod +x MacChangerPy.py
+Usage
+Change to a specific MAC address:
+```bash
+python MacChangerPy.py -i eth0 -m XX:XX:XX:XX:XX:XX
+Show the current MAC address:
+```bash
+python MacChangerPy.py -i eth0 -c
+
+Change the MAC address to a random value every specified time interval:
+python MacChangerPy.py -i eth0 -r -t 10
+
+##Options:
+-i : Network interface (required)
+-m : New MAC address
+-r : Generate a random MAC address
+-t : Time interval (in seconds) for changing the MAC address (used with -r)
+-c : Show the current MAC address
+-V : Show the script version
+
